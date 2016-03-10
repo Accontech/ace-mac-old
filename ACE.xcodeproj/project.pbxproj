@@ -2029,7 +2029,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "FILE=\"${SRCROOT}/HockeySDK-Mac/BuildAgent\"\nif [ -f \"$FILE\" ]; then\n\"$FILE\"\nfi\n";
+			shellScript = "FILE=\"${SRCROOT}/submodules/HockeySDK-Mac/BuildAgent\"\nif [ -f \"$FILE\" ]; then\n\"$FILE\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -2264,7 +2264,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/HockeySDK-Mac",
+					"$(PROJECT_DIR)/submodules/HockeySDK-Mac",
 					"$(PROJECT_DIR)",
 				);
 				HEADER_SEARCH_PATHS = (
@@ -2300,7 +2300,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/HockeySDK-Mac",
+					"$(PROJECT_DIR)/submodules/HockeySDK-Mac",
 					"$(PROJECT_DIR)",
 				);
 				HEADER_SEARCH_PATHS = (
