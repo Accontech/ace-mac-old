@@ -28,10 +28,6 @@ else
   ls -la "$HOCKEYSDK_FRAMEWORK_PATH"
 fi
 
-ls -la
-
-exit 0
-
 make -j 8
 ninja -C WORK/cmake
 wget http://ciscobinary.openh264.org/libopenh264-1.5.0-osx64.dylib.bz2 
