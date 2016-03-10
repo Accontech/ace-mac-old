@@ -114,7 +114,8 @@ static const float callAlertStepInterval = 0.5;
 }
 
 - (IBAction)onButtonKeypad:(id)sender {
-    keypadWindowController = [[NSStoryboard storyboardWithName:@"Main" bundle:nil] instantiateControllerWithIdentifier:@"KeypadWindowController"];
+//    keypadWindowController = [[NSStoryboard storyboardWithName:@"Main" bundle:nil] instantiateControllerWithIdentifier:@"KeypadWindowController"];
+    keypadWindowController = [[KeypadWindowController alloc] init];
     [keypadWindowController showWindow:self];
 }
 

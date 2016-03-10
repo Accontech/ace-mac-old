@@ -131,6 +131,7 @@ NSString *const kLinphoneInternalChatDBFilename = @"linphone_chats.db";
 //@synthesize silentPushCompletion;
 @synthesize wasRemoteProvisioned;
 @synthesize configDb;
+bool iterateLock;
 
 + (BOOL)isCodecSupported: (const char *)codecName {
     return (codecName != NULL) &&
@@ -183,6 +184,7 @@ NSString *const kLinphoneInternalChatDBFilename = @"linphone_chats.db";
     @synchronized(self){
         if(theLinphoneManager == nil) {
             theLinphoneManager = [[LinphoneManager alloc] init];
+            iterateLock = false;
         }
     }
     return theLinphoneManager;
@@ -1062,12 +1064,19 @@ static LinphoneCoreVTable linphonec_vtable = {.show = NULL,
 
 //scheduling loop
 - (void)iterate {
+    if (iterateLock)
+    {
+        return;
+    }
+    iterateLock = true;
     @try {
         if ([NSThread mainThread])
             linphone_core_iterate(theLinphoneCore);
+        iterateLock = false;
     }
     @catch (NSException *exception) {
         NSLog(@"linphone_core_iterate exception: %@", exception);
+        iterateLock = false;
     }
 }
 
