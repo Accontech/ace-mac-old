@@ -5,20 +5,32 @@ cd $DIR/..
 
 set -o pipefail
 
-cd submodules/HockeyApp-Mac
+cd submodules/HockeySDK-Mac
 bundle install
 cd Support
-HOCKEYSDK_FRAMEWORK_PATH=$(xcodebuild -project HockeySDK.xcodeproj -scheme "HockeySDK" -configuration Release -destination "platform=OS X" clean && xcodebuild -project HockeySDK.xcodeproj -scheme "HockeySDK" -configuration Release -destination "platform=OS X" | grep touch  |awk '{print $3}')
+
+HOCKEYSDK_FRAMEWORK_PATH="$(xcodebuild -project HockeySDK.xcodeproj -scheme HockeySDK -configuration Release -destination 'platform=OS X' clean > /dev/null 2>&1 && xcodebuild -project HockeySDK.xcodeproj -scheme HockeySDK -configuration Release -destination 'platform=OS X' | grep touch  |awk '{print $3}')"
 
 cd $DIR/..
 
 if [ -d "$HOCKEYSDK_FRAMEWORK_PATH" ] ; then
+  echo "Found a build result from the HockeySDK-Mac compile"
+
   if [ -d HockeySDK.framework ] ; then
+    echo "Remove the existing HockeySDK.framework in this tree"
     rm -fr HockeySDK.framework
   fi
 
+  echo "Symlink the framework from the build into this tree"
   ln -sf "$HOCKEYSDK_FRAMEWORK_PATH" HockeySDK.framework
+else
+  echo "Could not find HockeySDK-Mac framework build asset path"
+  ls -la "$HOCKEYSDK_FRAMEWORK_PATH"
 fi
+
+ls -la
+
+exit 0
 
 make -j 8
 ninja -C WORK/cmake
