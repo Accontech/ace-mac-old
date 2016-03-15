@@ -196,7 +196,6 @@
 		73048F6A1C46BE7600375345 /* libbelr.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 73048F691C46BE7600375345 /* libbelr.1.dylib */; };
 		73048F6C1C46C00100375345 /* libbelr.1.dylib in Copy Files */ = {isa = PBXBuildFile; fileRef = 73048F6B1C46C00100375345 /* libbelr.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		73048F6E1C46C01300375345 /* libbelcard.1.dylib in Copy Files */ = {isa = PBXBuildFile; fileRef = 73048F6D1C46C01300375345 /* libbelcard.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		731677EC1C76B724001C4DB9 /* libbctoolbox.0.0.0.dylib in Copy Files */ = {isa = PBXBuildFile; fileRef = 731677E91C76B724001C4DB9 /* libbctoolbox.0.0.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		731677ED1C76B724001C4DB9 /* libbctoolbox.0.dylib in Copy Files */ = {isa = PBXBuildFile; fileRef = 731677EA1C76B724001C4DB9 /* libbctoolbox.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		731677EE1C76B724001C4DB9 /* libbctoolbox.dylib in Copy Files */ = {isa = PBXBuildFile; fileRef = 731677EB1C76B724001C4DB9 /* libbctoolbox.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		733FFCD21C85F22F00BA1B87 /* libmediastreamer_base.7.dylib in Copy Files */ = {isa = PBXBuildFile; fileRef = 733FFCCE1C85F22F00BA1B87 /* libmediastreamer_base.7.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
@@ -451,7 +450,6 @@
 				73EDA3031BFA9F6D00EC7039 /* liblinphone.8.dylib in Copy Files */,
 				73EDA3041BFA9F6D00EC7039 /* liblinphone.dylib in Copy Files */,
 				73EDA30C1BFA9F6D00EC7039 /* libopenh264.dylib in Copy Files */,
-				731677EC1C76B724001C4DB9 /* libbctoolbox.0.0.0.dylib in Copy Files */,
 				731677ED1C76B724001C4DB9 /* libbctoolbox.0.dylib in Copy Files */,
 				731677EE1C76B724001C4DB9 /* libbctoolbox.dylib in Copy Files */,
 				73EDA30D1BFA9F6D00EC7039 /* libopus.5.dylib in Copy Files */,
@@ -757,7 +755,6 @@
 		73048F691C46BE7600375345 /* libbelr.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libbelr.1.dylib; path = "WORK/Build/linphone_package/linphone-sdk-tmp/lib/libbelr.1.dylib"; sourceTree = "<group>"; };
 		73048F6B1C46C00100375345 /* libbelr.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libbelr.1.dylib; path = "WORK/Build/linphone_package/linphone-sdk-tmp/lib/libbelr.1.dylib"; sourceTree = "<group>"; };
 		73048F6D1C46C01300375345 /* libbelcard.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libbelcard.1.dylib; path = "WORK/Build/linphone_package/linphone-sdk-tmp/lib/libbelcard.1.dylib"; sourceTree = "<group>"; };
-		731677E91C76B724001C4DB9 /* libbctoolbox.0.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libbctoolbox.0.0.0.dylib; path = "WORK/Build/linphone_package/linphone-sdk-tmp/lib/libbctoolbox.0.0.0.dylib"; sourceTree = "<group>"; };
 		731677EA1C76B724001C4DB9 /* libbctoolbox.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libbctoolbox.0.dylib; path = "WORK/Build/linphone_package/linphone-sdk-tmp/lib/libbctoolbox.0.dylib"; sourceTree = "<group>"; };
 		731677EB1C76B724001C4DB9 /* libbctoolbox.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libbctoolbox.dylib; path = "WORK/Build/linphone_package/linphone-sdk-tmp/lib/libbctoolbox.dylib"; sourceTree = "<group>"; };
 		733FFCCE1C85F22F00BA1B87 /* libmediastreamer_base.7.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libmediastreamer_base.7.dylib; path = "WORK/Build/linphone_package/linphone-sdk-tmp/lib/libmediastreamer_base.7.dylib"; sourceTree = "<group>"; };
@@ -1528,7 +1525,6 @@
 				733FFCCF1C85F22F00BA1B87 /* libmediastreamer_base.dylib */,
 				733FFCD01C85F22F00BA1B87 /* libmediastreamer_voip.7.dylib */,
 				733FFCD11C85F22F00BA1B87 /* libmediastreamer_voip.dylib */,
-				731677E91C76B724001C4DB9 /* libbctoolbox.0.0.0.dylib */,
 				731677EA1C76B724001C4DB9 /* libbctoolbox.0.dylib */,
 				731677EB1C76B724001C4DB9 /* libbctoolbox.dylib */,
 				7301AF011C7218A900B3648D /* libmediastreamer_base.7.dylib */,
