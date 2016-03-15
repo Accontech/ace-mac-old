@@ -205,8 +205,6 @@
 		73AEC3921C6BEA0100908DE0 /* libortp.11.dylib in Copy Files */ = {isa = PBXBuildFile; fileRef = 73AEC3911C6BEA0100908DE0 /* libortp.11.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		73EA845F1C87910C00C35FBE /* libmsopenh264.so in Copy Files */ = {isa = PBXBuildFile; fileRef = 73EA845B1C87910C00C35FBE /* libmsopenh264.so */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		73EA84601C87910C00C35FBE /* libmswebrtc.so in Copy Files */ = {isa = PBXBuildFile; fileRef = 73EA845C1C87910C00C35FBE /* libmswebrtc.so */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		73EA84611C87913400C35FBE /* libmsamr.so in Frameworks */ = {isa = PBXBuildFile; fileRef = 73EA84591C87910C00C35FBE /* libmsamr.so */; };
-		73EA84621C87913400C35FBE /* libmsbcg729.so in Frameworks */ = {isa = PBXBuildFile; fileRef = 73EA845A1C87910C00C35FBE /* libmsbcg729.so */; };
 		73EA84631C87913400C35FBE /* libmsopenh264.so in Frameworks */ = {isa = PBXBuildFile; fileRef = 73EA845B1C87910C00C35FBE /* libmsopenh264.so */; };
 		73EA84641C87913400C35FBE /* libmswebrtc.so in Frameworks */ = {isa = PBXBuildFile; fileRef = 73EA845C1C87910C00C35FBE /* libmswebrtc.so */; };
 		73EDA23C1BFA9F2C00EC7039 /* libantlr3c.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 73EDA1FE1BFA9F2C00EC7039 /* libantlr3c.1.dylib */; };
@@ -923,8 +921,6 @@
 				73EDA29C1BFA9F2D00EC7039 /* libswresample.0.6.100.dylib in Frameworks */,
 				73EDA29E1BFA9F2D00EC7039 /* libswresample.0.dylib in Frameworks */,
 				73EDA2A01BFA9F2D00EC7039 /* libswresample.dylib in Frameworks */,
-				73EA84611C87913400C35FBE /* libmsamr.so in Frameworks */,
-				73EA84621C87913400C35FBE /* libmsbcg729.so in Frameworks */,
 				73EA84631C87913400C35FBE /* libmsopenh264.so in Frameworks */,
 				73EA84641C87913400C35FBE /* libmswebrtc.so in Frameworks */,
 				73EDA2A21BFA9F2D00EC7039 /* libswscale.2.1.100.dylib in Frameworks */,
